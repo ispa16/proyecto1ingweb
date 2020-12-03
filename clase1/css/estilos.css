@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    background-color: rgb(236, 236, 236);
+}
+header.cabeceraPrincipal{
+    background-color: #e76e1e ;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    width: 90%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 auto;
+    min-height: 30px;
+    background-color: rgb(231, 230, 231);
+}
+main section.contenedor{padding: 1em;}
+header.cabeceraPrincipal img{
+    max-width: 100%;
+    display: inline-block;
+    padding: 1em 1em;
+    vertical-align: top;
+}
+header.cabeceraPrincipal h1{
+    font-size: 1em;
+    padding: 3em;
+    width: 30%;
+    display: inline-block;
+    text-shadow: rgb(36, 36, 36) 2px 2px 1px;
+}
+header  ul{
+	display: inline-block;
+	padding: 3em; 
+	color:white;
+}
+header  ul li{
+	display: inline-block;
+	padding-left:1em;
+
+}
+header  ul li a{
+	color:white
+}
+section ul li{
+		padding-bottom:2em;
+}
+nav.menuPrincipal, .sliderPrincipal,  .modulosPrincipales, .piePagina{
+    width: 100%;
+    background-color: rgb(8, 51, 87);
+    
+    text-align: center;
+}
+nav.menuPrincipal{
+	min-height: 50px;
+}
+nav.menuPrincipal a{
+    color: #ffffff;
+    padding: 6px 30px;
+    font-size: 20px;
+
+    text-decoration: none;
+}
+nav.menuPrincipal a:hover{
+    background-color:  rgb(144, 223, 247);
+    color: rgb(23, 37, 41);
+}
+.grupo{
+    padding: 0.5em 0;
+}
+.grupo label{
+    display: block;
+}
+.sliderPrincipal{
+    background-color: rgb(119, 118, 118);
+}
+.servicios{
+    width: 100%;
+    background-color: rgb(194, 195, 196);
+    margin: 0 auto;
+    height: auto;
+    min-height: 500px;
+    text-align: center;
+}
+
+.piePagina{
+    width: 100%;
+    background-color: rgb(31, 32, 32);
+    color: rgb(96, 97, 99);
+    text-align: center;
+    height: 50px;
+}
+.piePagina h6{
+    padding: 2em 0;
+}
+.centro{
+	width: 100%;
+	height: auto;	
+
+}
+.tabla{
+	font-size: 20px;
+	padding-top: 1em;
+
+}
+.tabla tr td{
+	padding-left: 1em;
+	padding-bottom: 2em;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+	
+    header.cabeceraPrincipal{
+        width: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid #000000;
+    }
+    header.cabeceraPrincipal img{
+        max-width: 100%;
+        display: inline-block;
+        padding: 0.5em 0.5em;
+        vertical-align: top;
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        padding: 1em;
+        width: 60%;
+        display: inline-block;
+        text-shadow: rgb(36, 36, 36) 2px 2px 1px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header.cabeceraPrincipal{
+
+        text-align: center;
+    }
+    header.cabeceraPrincipal img{
+
+    }
+    header.cabeceraPrincipal h1{
+        font-size: 1em;
+        padding: 1em;
+        width: 100%;
+        display: block;
+        text-shadow: rgb(36, 36, 36) 2px 2px 1px;
+    }
+    nav.menuPrincipal{
+        height: 100xp;
+    }
+    nav.menuPrincipal a{
+        padding: 6px 30px;
+        display: block;
+        background-color: #e76e1e;
+    }
+    .servicios article.noticias{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
