@@ -6,16 +6,39 @@ echo "Bienvenido: ".$_SESSION['nombresUser'];
 echo "<br>ud es un ".$listaRol[$_SESSION['rolUser']];
 echo "<a href='seguridad/salir.php?salir=true'>Cerrar sesion</a>";
 
-
+$sape= "dd";
 echo "<br>";
-if ($_SESSION['rolUser']==2) {
-	echo "<a href='#'>Inicio</a>";
-	echo "<a href='#'>Usuarios</a>";
-	echo "<a href='#'>Reportes</a>";
-	echo "<a href='#'>Estadisticas</a>";
-}
-if ($_SESSION['rolUser']==1) {
-	echo "<a href='#'>Inicio</a>";
-	echo "<a href='#'>Reportes</a>";
-}
+$conn = new clase_mysqli7;
+ $conn -> conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+ $conn->consulta("select * from inscritos");
+ $lista=$conn->consulta_lista();
+ echo $conn->numregistros();
+ echo $lista[0][1];
+ echo $lista[1][1];
+  echo $lista[2][1];
+ echo $lista[3][1];
+ echo $lista[4][1];
+
 ?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<center>
+        <table class="tabla">
+        <?php 
+        $i=0;
+       // while ($lista[$i][0] <= $conn->numregistros()) {
+        //	echo $lista[$i][0];
+        //	$i=$i+1;
+       // 	        }
+         ?>
+        </table>
+</center>
+</body>
+</html>

@@ -35,20 +35,20 @@ header.cabeceraPrincipal h1{
     text-shadow: rgb(36, 36, 36) 2px 2px 1px;
 }
 header  ul{
-	display: inline-block;
-	padding: 3em; 
-	color:white;
+    display: inline-block;
+    padding: 3em; 
+    color:white;
 }
 header  ul li{
-	display: inline-block;
-	padding-left:1em;
+    display: inline-block;
+    padding-left:1em;
 
 }
 header  ul li a{
-	color:white
+    color:white
 }
 section ul li{
-		padding-bottom:2em;
+        padding-bottom:2em;
 }
 nav.menuPrincipal, .sliderPrincipal,  .modulosPrincipales, .piePagina{
     width: 100%;
@@ -57,7 +57,7 @@ nav.menuPrincipal, .sliderPrincipal,  .modulosPrincipales, .piePagina{
     text-align: center;
 }
 nav.menuPrincipal{
-	min-height: 50px;
+    min-height: 50px;
 }
 nav.menuPrincipal a{
     color: #ffffff;
@@ -99,24 +99,24 @@ nav.menuPrincipal a:hover{
     padding: 2em 0;
 }
 .centro{
-	width: 100%;
-	height: auto;	
+    width: 100%;
+    height: auto;   
 
 }
 .tabla{
-	font-size: 20px;
-	padding-top: 1em;
+    font-size: 20px;
+    padding-top: 1em;
 
 }
 .tabla tr td{
-	padding-left: 1em;
-	padding-bottom: 2em;
+    padding-left: 1em;
+    padding-bottom: 2em;
 }
 
 
 
 @media only screen and (max-width: 750px) {
-	
+    
     header.cabeceraPrincipal{
         width: 100%;
         margin: 0 auto;
@@ -165,4 +165,67 @@ nav.menuPrincipal a:hover{
         display: block;
         margin: 0 auto;
     }
+}
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: auto;
+  min-height: 500px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
