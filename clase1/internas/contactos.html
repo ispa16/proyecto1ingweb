@@ -10,8 +10,12 @@
     <header class="cabeceraPrincipal">
         <img class="anime" src="../images/clei-logo.png" alt="Logotipo del evento">
         <h1>V Conferencia de desarrollo de software UTPL 2021</h1>
+        <ul>
+            <li><a href="../app/login.php">Iniciar Sesion</a></li>
+        </ul>
     </header>
     <nav class="menuPrincipal">
+        <br>
         <a href="../index.html">Inicio</a>
         <a href="ponentes.html">Ponentes</a>
         <a href="campus.html">Campus</a>
@@ -21,26 +25,23 @@
     </nav>
     <main>
         <section class="contenedor">
-            <h2>Formulario de contacto</h2>
+            <center>
+                <h2>Formulario de contacto</h2>
+            </center>
         </section>
     </main>
     <section class="servicios">
-        <article class="noticias">
-            <h3>Título de la noticia</h3>
-            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
-        </article>
-        <article class="noticias">
-            <h3>Título de la noticia</h3>
-            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
-        </article>
-        <article class="noticias">
-            <h3>Título de la noticia</h3>
-            <p>Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia.Información en curso de la notícia. </p>
-        </article>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" name="nombre" placeholder="Nombre completo">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+            <input id="submit" name="submit" type="submit" value="Enviar">
+        </form>
     </section>
-    <aside class="modulosPrincipales">
-        imagen de publicidad
-    </aside>
+    
     <footer class="piePagina">
         <h6>Derechos Reservados UTPL 2020 by: @rlramirez</h6>
     </footer>

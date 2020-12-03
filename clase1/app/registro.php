@@ -32,7 +32,7 @@
             <label for="nombre">Nombres</label>
             </div>
             <div class="col-75">
-            <input name="nombre" type="text" id="nombre"  placeholder="Tu nombre..">
+            <input name="nombre" type="text" id="nombre"  placeholder="Tu nombre.." required="">
             </div>
             </div>
             <div class="row">
@@ -40,7 +40,7 @@
             <label for="profesion">Profesion</label>
             </div>
             <div class="col-75">
-            <input type="text" id="profesion" name="profesion" placeholder="Tu profesion..">
+            <input type="text" id="profesion" name="profesion" placeholder="Tu profesion.." required="">
             </div>
             </div>
             <div class="row">
@@ -79,7 +79,18 @@
             <input type="text" id="dni" name="dni" placeholder="Tu dni..">
             </div>
             </div>
-
+            <div class="row">
+            <div class="col-25">
+            <label for="tipo">Tipo de Participante</label>
+            </div>
+            <div class="col-75">
+            <select id="tipo" name="tipo">
+            <option value="profesor">Profesor UTPL</option>
+            <option value="estudiante">Estudiante UTPL</option>
+            <option value="general">Publico en general</option>
+            </select>
+            </div>
+            </div>
 
             <div class="row">
             <input type="submit" value="Submit">
